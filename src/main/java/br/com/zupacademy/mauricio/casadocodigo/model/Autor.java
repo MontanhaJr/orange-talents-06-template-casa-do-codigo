@@ -18,6 +18,9 @@ public class Autor {
     @Column(nullable = false, length = 400)
     private LocalDateTime dataHoraCadastro = LocalDateTime.now();
 
+    @Deprecated
+    public Autor() {}
+
     public Autor(String nome, String email, String descricao) {
         this.nome = nome;
         this.email = email;
