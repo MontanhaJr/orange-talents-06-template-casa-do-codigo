@@ -1,8 +1,8 @@
-package br.com.zupacademy.mauricio.casadocodigo.controller;
+package br.com.zupacademy.mauricio.casadocodigo.categoria.controller;
 
-import br.com.zupacademy.mauricio.casadocodigo.controller.request.CategoriaRequest;
-import br.com.zupacademy.mauricio.casadocodigo.model.Categoria;
-import br.com.zupacademy.mauricio.casadocodigo.repository.CategoriaRepository;
+import br.com.zupacademy.mauricio.casadocodigo.categoria.dto.request.CategoriaRequest;
+import br.com.zupacademy.mauricio.casadocodigo.categoria.Categoria;
+import br.com.zupacademy.mauricio.casadocodigo.categoria.repository.CategoriaRepository;
 import br.com.zupacademy.mauricio.casadocodigo.validation.NomeCategoriaUnicoValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

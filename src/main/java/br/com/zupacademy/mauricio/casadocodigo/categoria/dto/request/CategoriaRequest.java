@@ -1,6 +1,6 @@
-package br.com.zupacademy.mauricio.casadocodigo.controller.request;
+package br.com.zupacademy.mauricio.casadocodigo.categoria.dto.request;
 
-import br.com.zupacademy.mauricio.casadocodigo.model.Categoria;
+import br.com.zupacademy.mauricio.casadocodigo.categoria.Categoria;
 
 import javax.validation.constraints.NotBlank;
 

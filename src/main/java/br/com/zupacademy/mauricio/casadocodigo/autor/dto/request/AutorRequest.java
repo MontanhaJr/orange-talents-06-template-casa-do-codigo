@@ -1,6 +1,6 @@
-package br.com.zupacademy.mauricio.casadocodigo.controller.request;
+package br.com.zupacademy.mauricio.casadocodigo.autor.dto.request;
 
-import br.com.zupacademy.mauricio.casadocodigo.model.Autor;
+import br.com.zupacademy.mauricio.casadocodigo.autor.Autor;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.Email;

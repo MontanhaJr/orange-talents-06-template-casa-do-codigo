@@ -1,4 +1,4 @@
-package br.com.zupacademy.mauricio.casadocodigo.model;
+package br.com.zupacademy.mauricio.casadocodigo.categoria;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;

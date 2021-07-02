@@ -1,4 +1,4 @@
-package br.com.zupacademy.mauricio.casadocodigo.model;
+package br.com.zupacademy.mauricio.casadocodigo.autor;
 
 import org.hibernate.validator.constraints.Length;
 

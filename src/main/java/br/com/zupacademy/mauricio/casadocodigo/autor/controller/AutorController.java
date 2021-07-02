@@ -1,8 +1,8 @@
-package br.com.zupacademy.mauricio.casadocodigo.controller;
+package br.com.zupacademy.mauricio.casadocodigo.autor.controller;
 
-import br.com.zupacademy.mauricio.casadocodigo.controller.request.AutorRequest;
-import br.com.zupacademy.mauricio.casadocodigo.model.Autor;
-import br.com.zupacademy.mauricio.casadocodigo.repository.AutorRepository;
+import br.com.zupacademy.mauricio.casadocodigo.autor.dto.request.AutorRequest;
+import br.com.zupacademy.mauricio.casadocodigo.autor.Autor;
+import br.com.zupacademy.mauricio.casadocodigo.autor.repository.AutorRepository;
 import br.com.zupacademy.mauricio.casadocodigo.validation.EmailAutorUnicoValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

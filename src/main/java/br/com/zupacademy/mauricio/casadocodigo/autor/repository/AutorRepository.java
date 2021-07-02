@@ -1,6 +1,6 @@
-package br.com.zupacademy.mauricio.casadocodigo.repository;
+package br.com.zupacademy.mauricio.casadocodigo.autor.repository;
 
-import br.com.zupacademy.mauricio.casadocodigo.model.Autor;
+import br.com.zupacademy.mauricio.casadocodigo.autor.Autor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

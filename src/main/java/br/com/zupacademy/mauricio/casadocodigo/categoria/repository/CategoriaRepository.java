@@ -1,6 +1,6 @@
-package br.com.zupacademy.mauricio.casadocodigo.repository;
+package br.com.zupacademy.mauricio.casadocodigo.categoria.repository;
 
-import br.com.zupacademy.mauricio.casadocodigo.model.Categoria;
+import br.com.zupacademy.mauricio.casadocodigo.categoria.Categoria;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
