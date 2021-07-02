@@ -1,6 +1,6 @@
 package br.com.zupacademy.mauricio.casadocodigo.validation;
 
-import br.com.zupacademy.mauricio.casadocodigo.form.AutorForm;
+import br.com.zupacademy.mauricio.casadocodigo.controller.request.AutorRequest;
 import br.com.zupacademy.mauricio.casadocodigo.model.Autor;
 import br.com.zupacademy.mauricio.casadocodigo.repository.AutorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,14 +11,14 @@ import org.springframework.validation.Validator;
 import java.util.Optional;
 
 @Component
-public class EmailUnicoValidator implements Validator {
+public class EmailAutorUnicoValidator implements Validator {
 
     @Autowired
     AutorRepository autorRepository;
 
     @Override
     public boolean supports(Class<?> clazz) {
-        return AutorForm.class.isAssignableFrom(clazz);
+        return AutorRequest.class.isAssignableFrom(clazz);
     }
 
     @Override
@@ -26,11 +26,11 @@ public class EmailUnicoValidator implements Validator {
         if (errors.hasErrors()) {
             return;
         }
-        AutorForm request = (AutorForm) target;
+        AutorRequest request = (AutorRequest) target;
 
         Optional<Autor> autor = autorRepository.findByEmail(request.getEmail());
         if (autor.isPresent()) {
-            errors.rejectValue("email", "emailNotUnique", request.getEmail());
+            errors.rejectValue("email", "EmailAutorNaoUnico");
         }
     }
 }

@@ -1,4 +1,4 @@
-package br.com.zupacademy.mauricio.casadocodigo.form;
+package br.com.zupacademy.mauricio.casadocodigo.controller.request;
 
 import br.com.zupacademy.mauricio.casadocodigo.model.Autor;
 import org.hibernate.validator.constraints.Length;
@@ -6,7 +6,7 @@ import org.hibernate.validator.constraints.Length;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
-public class AutorForm {
+public class AutorRequest {
 
     private Long id;
     @NotBlank
@@ -16,7 +16,7 @@ public class AutorForm {
     @NotBlank @Length(max = 400)
     private String descricao;
 
-    public AutorForm(String nome, String email, String descricao) {
+    public AutorRequest(String nome, String email, String descricao) {
         this.nome = nome;
         this.email = email;
         this.descricao = descricao;

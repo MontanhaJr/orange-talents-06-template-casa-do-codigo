@@ -1,6 +1,10 @@
 package br.com.zupacademy.mauricio.casadocodigo.model;
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
 
 @Entity
@@ -21,7 +25,7 @@ public class Autor {
     @Deprecated
     public Autor() {}
 
-    public Autor(String nome, String email, String descricao) {
+    public Autor(@NotBlank String nome, @NotBlank @Email String email, @NotBlank @Length(max = 400) String descricao) {
         this.nome = nome;
         this.email = email;
         this.descricao = descricao;
