@@ -1,6 +1,8 @@
 package br.com.zupacademy.mauricio.casadocodigo.autor.dto.request;
 
 import br.com.zupacademy.mauricio.casadocodigo.autor.Autor;
+import br.com.zupacademy.mauricio.casadocodigo.categoria.Categoria;
+import br.com.zupacademy.mauricio.casadocodigo.validation.annotation.IsUniqueValidator;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.Email;
@@ -12,11 +14,13 @@ public class AutorRequest {
     @NotBlank
     private String nome;
     @NotBlank @Email
+    @IsUniqueValidator(nomeAtributo = "email", classe = Autor.class)
     private String email;
     @NotBlank @Length(max = 400)
     private String descricao;
 
-    public AutorRequest(String nome, String email, String descricao) {
+    public AutorRequest(@NotBlank String nome, @NotBlank @Email String email,
+                        @NotBlank @Length(max = 400) String descricao) {
         this.nome = nome;
         this.email = email;
         this.descricao = descricao;
