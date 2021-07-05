@@ -1,4 +1,4 @@
-package br.com.zupacademy.mauricio.casadocodigo.validation.annotation;
+package br.com.zupacademy.mauricio.casadocodigo.validation.annotation.exists;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
@@ -8,12 +8,13 @@ import java.lang.annotation.Target;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
+
 @Target({FIELD})
 @Retention(RUNTIME)
-@Constraint(validatedBy = UniqueValidator.class)
-public @interface IsUniqueValidator {
+@Constraint(validatedBy = ExistsValidate.class)
+public @interface ExistsValidator {
 
-    String message() default "já existe!";
+    String message() default "Não existe!";
 
     Class<?>[] groups() default {};
 
@@ -22,5 +23,4 @@ public @interface IsUniqueValidator {
     String nomeAtributo();
 
     Class<?> classe();
-
 }

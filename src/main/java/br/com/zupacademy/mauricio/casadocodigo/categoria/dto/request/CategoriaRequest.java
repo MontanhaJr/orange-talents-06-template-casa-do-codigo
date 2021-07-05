@@ -1,7 +1,7 @@
 package br.com.zupacademy.mauricio.casadocodigo.categoria.dto.request;
 
 import br.com.zupacademy.mauricio.casadocodigo.categoria.Categoria;
-import br.com.zupacademy.mauricio.casadocodigo.validation.annotation.IsUniqueValidator;
+import br.com.zupacademy.mauricio.casadocodigo.validation.annotation.unique.IsUniqueValidator;
 
 import javax.validation.constraints.NotBlank;
 

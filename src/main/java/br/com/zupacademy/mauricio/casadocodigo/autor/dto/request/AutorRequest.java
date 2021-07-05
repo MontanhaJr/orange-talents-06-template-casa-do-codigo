@@ -1,8 +1,7 @@
 package br.com.zupacademy.mauricio.casadocodigo.autor.dto.request;
 
 import br.com.zupacademy.mauricio.casadocodigo.autor.Autor;
-import br.com.zupacademy.mauricio.casadocodigo.categoria.Categoria;
-import br.com.zupacademy.mauricio.casadocodigo.validation.annotation.IsUniqueValidator;
+import br.com.zupacademy.mauricio.casadocodigo.validation.annotation.unique.IsUniqueValidator;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.Email;

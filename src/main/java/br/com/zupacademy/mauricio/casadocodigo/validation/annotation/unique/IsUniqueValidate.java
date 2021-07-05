@@ -1,4 +1,4 @@
-package br.com.zupacademy.mauricio.casadocodigo.validation.annotation;
+package br.com.zupacademy.mauricio.casadocodigo.validation.annotation.unique;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -7,7 +7,7 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.util.List;
 
-public class UniqueValidator implements ConstraintValidator<IsUniqueValidator, Object> {
+public class IsUniqueValidate implements ConstraintValidator<IsUniqueValidator, Object> {
 
     private String nomeAtributo;
     private Class<?> classe;
