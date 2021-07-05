@@ -46,6 +46,14 @@ public class Livro {
     @ManyToOne
     private Autor autor;
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
     public Livro() {
     }
 

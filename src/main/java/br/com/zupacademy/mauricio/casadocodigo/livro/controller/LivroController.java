@@ -5,10 +5,7 @@ import br.com.zupacademy.mauricio.casadocodigo.livro.dto.request.LivroRequest;
 import br.com.zupacademy.mauricio.casadocodigo.livro.repository.LivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -30,5 +27,4 @@ public class LivroController {
         livroRepository.save(livro);
         return ResponseEntity.ok().build();
     }
-
 }
