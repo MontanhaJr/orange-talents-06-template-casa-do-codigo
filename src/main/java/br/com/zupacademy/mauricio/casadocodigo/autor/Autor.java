@@ -22,6 +22,10 @@ public class Autor {
     @Column(nullable = false, length = 400)
     private LocalDateTime dataHoraCadastro = LocalDateTime.now();
 
+    public String getNome() {
+        return nome;
+    }
+
     @Deprecated
     public Autor() {}
 

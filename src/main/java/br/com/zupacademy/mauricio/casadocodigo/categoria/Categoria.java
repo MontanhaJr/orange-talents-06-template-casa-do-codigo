@@ -12,6 +12,10 @@ public class Categoria {
     @Column(nullable = false, unique = true)
     private String nome;
 
+    public String getNome() {
+        return nome;
+    }
+
     @Deprecated
     Categoria() { }
 
