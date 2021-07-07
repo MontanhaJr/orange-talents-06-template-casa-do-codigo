@@ -4,6 +4,8 @@ import br.com.zupacademy.mauricio.casadocodigo.estado.dto.request.EstadoRequest;
 import br.com.zupacademy.mauricio.casadocodigo.pais.Pais;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Estado {
@@ -29,7 +31,7 @@ public class Estado {
     public Estado() {
     }
 
-    public Estado(String nome, Pais pais) {
+    public Estado(@NotBlank String nome, @NotNull Pais pais) {
         this.nome = nome;
         this.pais = pais;
     }
